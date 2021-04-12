@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+html {
+    position: relative;
+    min-height: 100%;
+  }
+
+body {
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-weight: 400;
+    flex-direction: column;
+    position: relative;
+    font-family: "Ubuntu", bold;
+
+    div {
+        margin: 20px;
+    }
+}
+  
+.title {
+  width: 400px;
+  padding-bottom: 20px;
+  color: rgba(0,0,0,1);
+  top: 291px;
+  left: 47px;
+  font-family: Ubuntu;
+  font-weight: Bold;
+  font-size: 42px;
+  opacity: 1;
+  text-align: center;
+  align-items: center;
+}
+.subtitle {
+  height: 100px;
+  color: rgba(0,0,0,1);
+  top: 321px;
+  left: 78px;
+  font-family: Ubuntu;
+  font-weight: Regular;
+  font-size: 18px;
+  opacity: 1;
+  text-align: center;
+  align-items: center;
+} 
+
+
+  .btn-1 {
+    font-family: "Ubuntu", bold;
+    background: #4cc478;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 1rem;
+    border: 0;
+    transition: all 0.5s;
+    border-radius: 10px;
+    width: auto;
+    position: relative;
+    text-align: center;
+
+    &::after {
+        font-family: "Font Awesome 5 Pro";
+        font-weight: 200;
+        position: absolute;
+        left: 60%;
+        top: 31%;
+        right: 5%;
+        bottom: 0;
+        opacity: 0;
+
+    }
+
+    &:hover {
+        background:#00924b;
+        transition: all 0.5s;
+        border-radius: 10px;
+        box-shadow: 0px 6px 15px #003313;
+        padding: 1.5rem 3.5rem 1.5rem 1.5rem;
+
+        &::after {
+            opacity: 1;
+            transition: all 0.5s;
+
+        }
+    }
+
+
+}
+
+.myButton {
+	box-shadow: 0px 8px 6px -5px #1e211d;
+	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+	background-color:#ffffff;
+	border-radius:14px;
+	border:1px solid #aba4ab;
+	display:inline-block;
+	cursor:pointer;
+	color:#020202;
+	font-family:Arial;
+	font-size:17px;
+	padding:13px 61px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+	background-color:#313b5e;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+ * {
+  overflow-x: hidden;
+  padding: 0px !important;
+  margin: 0px !important;
+} 
+
+.add_button1 {
+  position: absolute;
+  width: 18px;
+  top:   120px;
+  left: 300px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjQ0OHB0IiB2aWV3Qm94PSIwIDAgNDQ4IDQ0OCIgd2lkdGg9IjQ0OHB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im00MDggMTg0aC0xMzZjLTQuNDE3OTY5IDAtOC0zLjU4MjAzMS04LTh2LTEzNmMwLTIyLjA4OTg0NC0xNy45MTAxNTYtNDAtNDAtNDBzLTQwIDE3LjkxMDE1Ni00MCA0MHYxMzZjMCA0LjQxNzk2OS0zLjU4MjAzMSA4LTggOGgtMTM2Yy0yMi4wODk4NDQgMC00MCAxNy45MTAxNTYtNDAgNDBzMTcuOTEwMTU2IDQwIDQwIDQwaDEzNmM0LjQxNzk2OSAwIDggMy41ODIwMzEgOCA4djEzNmMwIDIyLjA4OTg0NCAxNy45MTAxNTYgNDAgNDAgNDBzNDAtMTcuOTEwMTU2IDQwLTQwdi0xMzZjMC00LjQxNzk2OSAzLjU4MjAzMS04IDgtOGgxMzZjMjIuMDg5ODQ0IDAgNDAtMTcuOTEwMTU2IDQwLTQwcy0xNy45MTAxNTYtNDAtNDAtNDB6bTAgMCIvPjwvc3ZnPg==)
+}
+
+.add_button2 {
+  position: absolute;
+  width: 18px;
+  top:  280px;
+  left: 200px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjQ0OHB0IiB2aWV3Qm94PSIwIDAgNDQ4IDQ0OCIgd2lkdGg9IjQ0OHB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im00MDggMTg0aC0xMzZjLTQuNDE3OTY5IDAtOC0zLjU4MjAzMS04LTh2LTEzNmMwLTIyLjA4OTg0NC0xNy45MTAxNTYtNDAtNDAtNDBzLTQwIDE3LjkxMDE1Ni00MCA0MHYxMzZjMCA0LjQxNzk2OS0zLjU4MjAzMSA4LTggOGgtMTM2Yy0yMi4wODk4NDQgMC00MCAxNy45MTAxNTYtNDAgNDBzMTcuOTEwMTU2IDQwIDQwIDQwaDEzNmM0LjQxNzk2OSAwIDggMy41ODIwMzEgOCA4djEzNmMwIDIyLjA4OTg0NCAxNy45MTAxNTYgNDAgNDAgNDBzNDAtMTcuOTEwMTU2IDQwLTQwdi0xMzZjMC00LjQxNzk2OSAzLjU4MjAzMS04IDgtOGgxMzZjMjIuMDg5ODQ0IDAgNDAtMTcuOTEwMTU2IDQwLTQwcy0xNy45MTAxNTYtNDAtNDAtNDB6bTAgMCIvPjwvc3ZnPg==)
+}
+
+.config {
+  position: absolute;
+  width: 25px;
+  top:  30px;
+  left: 30px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjQ0OHB0IiB2aWV3Qm94PSIwIDAgNDQ4IDQ0OCIgd2lkdGg9IjQ0OHB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im00MDggMTg0aC0xMzZjLTQuNDE3OTY5IDAtOC0zLjU4MjAzMS04LTh2LTEzNmMwLTIyLjA4OTg0NC0xNy45MTAxNTYtNDAtNDAtNDBzLTQwIDE3LjkxMDE1Ni00MCA0MHYxMzZjMCA0LjQxNzk2OS0zLjU4MjAzMSA4LTggOGgtMTM2Yy0yMi4wODk4NDQgMC00MCAxNy45MTAxNTYtNDAgNDBzMTcuOTEwMTU2IDQwIDQwIDQwaDEzNmM0LjQxNzk2OSAwIDggMy41ODIwMzEgOCA4djEzNmMwIDIyLjA4OTg0NCAxNy45MTAxNTYgNDAgNDAgNDBzNDAtMTcuOTEwMTU2IDQwLTQwdi0xMzZjMC00LjQxNzk2OSAzLjU4MjAzMS04IDgtOGgxMzZjMjIuMDg5ODQ0IDAgNDAtMTcuOTEwMTU2IDQwLTQwcy0xNy45MTAxNTYtNDAtNDAtNDB6bTAgMCIvPjwvc3ZnPg==)
+}
+
+.mobile {
+  width: 360px;
+  height: 640px;
+  background: rgb(233, 240, 238);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+h3{
+  font-family: Ubuntu;
+  font-weight: Bold;
+  opacity: 1;
+  font-size: 16px;
+  text-align: left;
+  position: absolute;
+}
+
+.plantinhas{
+  color: rgba(0,0,0,1);
+  top: 120px;
+  left: 30px;
+}
+
+.jardins{
+  color: rgba(0,0,0,1);
+  top: 280px;
+  left: 30px;
+}
+
+label {
+  display: inline-block;
+  width: 5em;
+}
+
+.icons{
+  color: rgba(0,0,0,1);
+  position: relative;
+  top: 35px;
+  left: 10px;
+  margin-bottom: 10px;
+  font-family: Ubuntu;
+  font-weight: Bold;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+
+
+.dados-plantas{
+  color: rgba(105,105,105,1);
+  position: relative;
+  top: -15px;
+  right: -30px;
+  margin-bottom: 15px;
+  font-family: Ubuntu;
+  font-weight: Bold;
+  font-size: 14px;
+  opacity: 1;
+  text-align: left;
+}
+
+p{  
+  font-family: Ubuntu;
+  font-weight: Bold;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+  position: absolute;
+}
+
+.hello {
+  color: rgba(0,0,0,1);
+  top: 80px;
+  left: 36px;
+}
+
+.user {
+  color: rgba(105,105,105,1);
+  top: 80px;
+  left: 88px;
+}
+
+.tipo_planta {
+  color: rgba(105,105,105,1);
+  top: 80px;
+  left: 150px;
+}
+
+.line-planta {
+  width: 600px;
+  height: 110px;
+  position: absolute;
+  top: 150px;
+  left: 10px;
+}
+
+.img-planta {
+  width: 110px;
+  height: 100px;
+  background: rgba(175,238,221,0.5);
+  opacity: 1;
+  display: inline-block;
+  flex-direction: column;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+
+.line-jardim {
+  width: 600px;
+  height: 110px;
+  position: absolute;
+  top: 300px;
+  left: 10px;
+}
+
+.planta_box {
+  width: 110px;
+  height: 100px;
+  background: rgba(175,238,221,0.5);
+  opacity: 1;
+  display: inline-block;
+  flex-direction: column;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+  
+}
+
+.relatorio {
+  width: 314px;
+  height: 105px;
+  background: rgba(175,238,221,0.5);
+  opacity: 1;
+  position: absolute;
+  top: 450px;
+  left: 27px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+  h3{
+    position: absolute;
+    top:  20px;
+    left: 60px;
+    font-family: Ubuntu;
+    font-weight: Bold;
+    font-size: 16px;
+    opacity: 1;
+    text-align: left;
+  }
+}
+
+ .relatorio .numeros{
+  color: rgba(0,0,0,1);
+  position: relative;
+  top: 20px;
+  left: 30px;
+  margin-bottom: 10px;
+  font-family: Ubuntu;
+  font-weight: Bold;
+  font-size: 18px;
+  opacity: 1;
+  text-align: left;
+}
+
+.relatorio .itens{
+  color: rgba(105,105,105,1);
+  position: absolute;
+  top:  20px;
+  left: 60px;
+  font-family: Ubuntu;
+  font-weight: Bold;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+
+.jardim {
+  width: 110px;
+  height: 100px;
+  background: rgba(175,238,221,0.5);
+  opacity: 1;
+  display: inline-block;
+  flex-direction: column;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+
+.notification{
+  width: 25px;
+  position: absolute;
+  top:  30px;
+  right: 30px;
+}
+
+.seeds{
+  width: 50px;
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+}
+
+.tools{
+  width: 60px;
+  position: absolute;
+  bottom: 18px;
+  left: 140px;
+}
+
+
+.seed_numbers {
+  height: 20px;
+  width: 20px;
+  background-color: rgb(182, 228, 210);
+  border-radius: 50%;
+  position: absolute;
+  display: inline-block;
+  bottom: 13px;
+  left: 65px;
+  h6{
+    color: rgb(35, 114, 206);
+    font-family: Ubuntu;
+    font-weight: Bold;
+    font-size: 15px;
+    opacity: 1;
+    text-align: center;
+  }
+}
+
+.tool_numbers {
+  height: 20px;
+  width: 20px;
+  background-color: rgb(182, 228, 210);
+  border-radius: 50%;
+  position: absolute;
+  display: inline-block;
+  bottom: 13px; 
+  left: 175px;
+  h6{
+    color: rgb(35, 114, 206);
+    font-family: Ubuntu;
+    font-weight: Bold;
+    font-size: 15px;
+    opacity: 1;
+    text-align: center;
+  }
+}
